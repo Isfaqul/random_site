@@ -1,0 +1,548 @@
+:root {
+  --the-orange: #f0442e;
+  --text-blue: #46aadc;
+  --box-blue: #a3d5f0;
+  --light-gray: #828282;
+  --dark-gray: #444444;
+  --bg-color: #633482;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: var(--bg-color);
+}
+
+.navbar,
+.main-container {
+  width: 72vw;
+}
+
+.navbar {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* height: 61px; */
+  width: 150px;
+}
+
+.nav-right-container ul li {
+  float: left;
+  list-style: none;
+  padding: 0 0 0 6rem;
+}
+
+.nav-right-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  transition: color 100ms ease-in-out;
+}
+
+.nav-right-container ul li a:hover {
+  color: var(--the-orange);
+}
+
+.hero span:first-of-type {
+  display: block;
+}
+
+.main-container {
+  margin: 14rem auto;
+  text-align: center;
+}
+
+.h1-top {
+  font-size: 6.5rem;
+  color: var(--text-blue);
+}
+
+.h1-btm-1 {
+  font-size: 8.5rem;
+  /* font-size: 4.43vw; */
+  color: var(--the-orange);
+  font-weight: 900;
+  line-height: 80%;
+}
+
+.h1-btm-2 {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 80%;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  margin: 2.5rem auto;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  display: block;
+  margin: 1rem 0;
+}
+
+form input,
+form button {
+  font-family: Raleway, sans-serif;
+  font-size: 2.5rem;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: var(--dark-gray);
+  box-shadow: 1px 2px 1px 1px var(--dark-gray);
+}
+
+form input {
+  margin: 0.5rem 0.5rem;
+  flex-basis: 75%;
+  padding: 2rem 3rem;
+}
+
+form button {
+  margin: 0.5rem 0.5rem;
+  flex-basis: 25%;
+  background-color: var(--box-blue);
+  cursor: pointer;
+  padding: 2rem minmax(1rem 2rem);
+}
+
+form button:hover {
+  position: relative;
+  bottom: 2px;
+  box-shadow: 1px 4px 1px 1px var(--dark-gray);
+}
+
+form button:active {
+  position: relative;
+  bottom: 0;
+  box-shadow: 1px 2px 1px 1px var(--dark-gray);
+}
+
+.description {
+  margin: 10rem auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.icon1 {
+  fill: var(--the-orange);
+}
+
+.icon {
+  margin-right: 2rem;
+}
+
+.describe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.icon img {
+  width: 10em;
+  flex-basis: 20%;
+}
+
+.describe-text {
+  flex-basis: 80%;
+  margin-left: 2rem;
+}
+
+.describe-heading {
+  font-size: 3rem;
+  color: white;
+}
+
+.decription-para {
+  font-size: 2rem;
+  color: var(--text-blue);
+}
+
+.bolded-orange {
+  color: var(--the-orange);
+  font-weight: 800;
+}
+
+.video p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  min-height: 315px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px 1px var(--dark-gray);
+}
+
+.cards {
+  margin: 10rem auto;
+  width: 100%;
+  max-width: 1036px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: #e1e1e1;
+  border-radius: 4px;
+  overflow: hidden;
+  color: var(--dark-gray);
+  font-weight: 700;
+  box-shadow: 1px 2px 1px 1px var(--dark-gray);
+}
+
+.card1 {
+  flex-basis: 31%;
+}
+
+.card2 {
+  flex-basis: 31%;
+}
+
+.card3 {
+  flex-basis: 31%;
+}
+
+.cards-header {
+  font-size: 2.5rem;
+  color: white;
+  background-color: var(--the-orange);
+  padding: 2rem;
+}
+
+.card-price {
+  font-size: 3.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.rs {
+  font-size: 3rem;
+}
+
+.card-text {
+  white-space: pre-line;
+  font-size: 2rem;
+  line-height: 200%;
+  font-weight: 700;
+}
+
+.card-btn {
+  display: block;
+  margin: 4rem auto 2rem auto;
+  text-decoration: none;
+  color: white;
+  background-color: var(--dark-gray);
+  border-radius: 5px;
+  width: 60%;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  transition: 100ms ease-out;
+}
+
+.card-btn:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+footer {
+  margin: 0 auto;
+  width: 72vw;
+  background-color: var(--box-blue);
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footer-nav1 {
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+  color: var(--dark-gray);
+}
+
+.footer-nav2 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav2 a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--dark-gray);
+  padding: 0 2rem;
+  color: var(--dark-gray);
+}
+
+.footer-nav2 a:hover {
+  color: rgb(40, 40, 40);
+}
+
+@media (max-width: 1400px) {
+  .h1-top {
+    font-size: 5.58rem;
+  }
+
+  .h1-btm-1 {
+    font-size: 7.5rem;
+  }
+
+  .h1-btm-2 {
+    font-size: 5.5rem;
+  }
+  form {
+    width: 100%;
+    max-width: 700px;
+  }
+  .description {
+    margin: 10rem auto;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .navbar {
+    width: 80vw;
+    display: flex;
+    margin: 4rem auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    /* height: 61px; */
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .nav-right-container ul li {
+    text-align: center;
+    padding: 0;
+    float: none;
+    list-style: none;
+    margin: 0 auto;
+  }
+  .nav-right-container {
+    width: 100%;
+    max-width: 600px;
+  }
+  .nav-right-container ul li a {
+    display: block;
+    color: var(--dark-gray);
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    width: 100%;
+    padding: 1.5rem 0;
+    margin: 0.7rem auto;
+    text-transform: uppercase;
+  }
+  .h1-top {
+    font-size: 4.58rem;
+  }
+
+  .h1-btm-1 {
+    font-size: 6.5rem;
+  }
+
+  .h1-btm-2 {
+    font-size: 4.5rem;
+  }
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+  .description {
+    margin: 10rem auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .describe {
+    margin: 5rem 0;
+  }
+  .cards {
+    margin: 10rem auto;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    width: 100vw;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: calc((85 / 100) * 560px);
+    min-height: calc((85 / 100) * 315px);
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 1px var(--dark-gray);
+  }
+  .cards {
+    max-width: 350px;
+  }
+  .h1-top {
+    font-size: 3.58rem;
+  }
+
+  .h1-btm-1 {
+    font-size: 5.5rem;
+  }
+
+  .h1-btm-2 {
+    font-size: 3.5rem;
+  }
+  form {
+    width: 100%;
+    max-width: 500px;
+  }
+  form label {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  form input,
+  form button {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+  .describe-heading {
+    font-size: 2rem;
+  }
+  .decription-para {
+    font-size: 1.5rem;
+  }
+  .icon img {
+    width: 7em;
+    flex-basis: 30%;
+  }
+  .describe-text {
+    flex-basis: 70%;
+  }
+  .logo {
+    width: 30%;
+  }
+  .nav-right-container ul li a {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 1.2rem 0;
+  }
+  .card-btn {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 1.7rem;
+  }
+  .cards-header {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 90px;
+    flex-direction: column-reverse;
+  }
+  .footer-nav2 {
+    margin-bottom: 1.5rem;
+  }
+  .h1-top {
+    font-size: 3rem;
+  }
+
+  .h1-btm-1 {
+    font-size: 4rem;
+  }
+
+  .h1-btm-2 {
+    font-size: 3rem;
+  }
+  form {
+    width: 100%;
+    max-width: 700px;
+  }
+  .icon {
+    display: none;
+  }
+  .describe-heading {
+    font-size: 2.8rem;
+  }
+  .decription-para {
+    font-size: 2rem;
+  }
+  .describe-text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    margin-top: 4rem;
+  }
+  form input,
+  form button {
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
+  }
+  form label {
+    font-size: 1.4rem;
+  }
+  .describe-heading {
+    font-size: 2rem;
+  }
+  .decription-para {
+    font-size: 1.5rem;
+  }
+}
